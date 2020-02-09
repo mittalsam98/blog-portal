@@ -1,0 +1,114 @@
+.tab-nav {
+  overflow: auto;
+  flex-wrap: nowrap;
+  overflow-y: hidden;  
+}
+
+/* width */
+::-webkit-scrollbar {
+  
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.App {
+  display: flex;
+  flex-direction: row;
+  /* width: 100%; */
+  /* align-items: stretch; */
+}
+
+.sidebar{
+text-align: center;
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: #2C3E50;
+overflow-x: hidden;
+transition: 0.3s;
+padding-top: 40px;
+}
+::-webkit-scrollbar {
+display: none;
+}
+.sidebarC{
+width: 250px;
+}
+
+.content{
+transition: margin-left .3s;
+width:100%
+}
+
+.contentC{
+margin-left: 250px;
+}
+.icon{
+display: none;
+}
+@media screen and (max-width: 990px) {
+.sidebarC{
+  width: 210px;
+  }
+  .contentC{
+    margin-left: 210px;
+  }
+  .icon{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+.sidebarC{
+  width: 200px;
+  }
+  .contentC{
+    margin-left: 200px;
+  }
+  .icon{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 570px) {
+.sidebarC{
+  width: 190px;
+  }
+  .contentC{
+    margin-left: 190px;
+  }
+  .icon{
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .sidebarC{
+    width: 180px;
+    }
+    .contentC{
+      margin-left: 180px;
+    }
+    .icon{
+      display: block;
+    }
+}
+
+
